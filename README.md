@@ -1,4 +1,4 @@
-# OpenPilot — Your AI Open Source Mentor
+# OpenPilot: Your AI Open Source Mentor
 
 OpenPilot helps first-time and returning contributors understand a public GitHub repository, identify a good issue, make a focused contribution plan, and review the work through a maintainer lens.
 
