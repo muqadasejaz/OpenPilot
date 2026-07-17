@@ -8,6 +8,9 @@ OpenPilot helps developers understand unfamiliar GitHub repositories, discover t
 
 Instead of acting like another AI coding assistant, OpenPilot acts like an experienced open source maintainer who guides contributors through the entire contribution workflow.
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/caf689a9-5cc2-4425-a7c6-28b3e9270e70" />
+
+
 ---
 
 #  Problem
@@ -116,7 +119,7 @@ Generate a professional GitHub pull request including:
 
 ---
 
-# 🛠 Tech Stack
+# Tech Stack
 
 ## Frontend
 
@@ -137,6 +140,10 @@ Generate a professional GitHub pull request including:
 ---
 
 #  Architecture
+
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/c6794e77-eee7-42b1-b76d-5a29e74ce070" />
+
+
 
 ```text
 GitHub Repository
@@ -174,6 +181,11 @@ Pull Request Generator
 8. Generate a GitHub-ready pull request.
 
 ---
+
+# Simplified Agent Flow
+
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/5274c2dd-f4c7-4a3b-99bc-a712821f7032" />
+
 
 #  Running Locally
 
