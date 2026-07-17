@@ -1,32 +1,249 @@
-# OpenPilot: Your AI Open Source Mentor
+#  OpenPilot
 
-OpenPilot helps first-time and returning contributors understand a public GitHub repository, identify a good issue, make a focused contribution plan, and review the work through a maintainer lens.
+## AI Open Source Contribution Mentor
 
-## MVP included
+> **Go from _"I want to contribute"_ to _"My pull request is ready."_**
 
-- A polished contributor workflow dashboard
-- Live public GitHub repository metadata and open-issue retrieval
-- Explainable newcomer-oriented issue ranking
-- Local-first contribution guidance, planning, maintainer review, and PR drafting
-- Zero third-party Python dependencies for the first runnable slice
+OpenPilot helps developers understand unfamiliar GitHub repositories, discover the best issue to work on, create an implementation plan, simulate maintainer feedback, and prepare a high-quality pull request.
 
-## Run locally
+Instead of acting like another AI coding assistant, OpenPilot acts like an experienced open source maintainer who guides contributors through the entire contribution workflow.
 
-```powershell
+---
+
+#  Problem
+
+Open source is one of the best ways to learn software engineering, but contributing is difficult.
+
+Developers often ask:
+
+- Which issue should I choose?
+- Where should I start?
+- How does this repository work?
+- Which files are relevant?
+- What do maintainers expect?
+- Is my pull request good enough?
+
+Many contributors give up before submitting their first pull request because navigating an unfamiliar codebase can be overwhelming.
+
+---
+
+#  Solution
+
+OpenPilot transforms any public GitHub repository into an interactive contribution workspace.
+
+Simply paste a GitHub repository URL and OpenPilot will:
+
+-  Analyze the repository
+-  Retrieve live GitHub issues
+-  Recommend beginner-friendly tasks
+-  Explain the repository structure
+-  Create a contribution plan
+-  Simulate maintainer feedback
+-  Generate a GitHub-ready pull request
+
+---
+
+#  Features
+
+##  Repository Analysis
+
+Analyze any public GitHub repository.
+
+- Repository metadata
+- Language detection
+- Community statistics
+- Project overview
+
+---
+
+##  Smart Issue Ranking
+
+Ranks issues based on:
+
+- Contribution difficulty
+- Scope
+- Newcomer friendliness
+- Community signals
+
+---
+
+##  AI Contribution Mentor
+
+Ask questions like:
+
+- Where should I start?
+- Explain the architecture.
+- What do maintainers expect?
+
+Receive repository-aware guidance that helps you confidently understand an unfamiliar project.
+
+---
+
+##  Contribution Planner
+
+Generate a structured implementation roadmap before writing code.
+
+Includes:
+
+- Objectives
+- Implementation steps
+- Validation strategy
+- Potential risks
+
+---
+
+##  Maintainer Review
+
+Run an AI-powered pre-review before opening your pull request.
+
+Checks include:
+
+- Contribution scope
+- Validation
+- Documentation
+- Repository conventions
+
+---
+
+##  Pull Request Generator
+
+Generate a professional GitHub pull request including:
+
+- Title
+- Summary
+- Motivation
+- Validation checklist
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+
+## Backend
+
+- Python
+- Built-in HTTP Server
+
+## Integrations
+
+- GitHub REST API
+- OpenAI Responses API *(optional)*
+
+---
+
+#  Architecture
+
+```text
+GitHub Repository
+        │
+        ▼
+Repository Analyzer
+        │
+        ▼
+Issue Ranking Engine
+        │
+        ▼
+Contribution Mentor
+        │
+        ▼
+Implementation Planner
+        │
+        ▼
+Maintainer Review
+        │
+        ▼
+Pull Request Generator
+```
+
+---
+
+#  How It Works
+
+1. Paste a public GitHub repository URL.
+2. OpenPilot analyzes the repository metadata.
+3. Live GitHub issues are retrieved.
+4. Issues are ranked based on contributor friendliness.
+5. Receive repository-aware guidance.
+6. Generate an implementation plan.
+7. Simulate maintainer feedback.
+8. Generate a GitHub-ready pull request.
+
+---
+
+#  Running Locally
+
+Start the server:
+
+```bash
 python server.py
 ```
 
-Open http://localhost:8000 and paste a public GitHub repository URL. No OpenAI API key, paid subscription, or model access is required. Optional: set `GITHUB_TOKEN` to reduce GitHub API rate-limit issues.
+Open your browser:
 
-## Build Week narrative
+```text
+http://localhost:8000
+```
 
-OpenPilot is a local-first developer tool built with Codex. It turns public GitHub metadata into a focused contribution workflow: analyze a repository, identify an issue, generate a safe plan, run a maintainer-style checklist, and draft a pull request. The runtime deliberately requires no OpenAI API key, which makes the demo reproducible for judges.
+### Optional Environment Variables
 
-Codex accelerated the implementation of the local HTTP service, GitHub intake, interface, issue-ranking logic, validation states, and submission documentation. The product does not claim that its local guidance is a live model response.
+```env
+OPENAI_API_KEY=
+GITHUB_TOKEN=
+```
 
-## Next milestones
+---
 
-1. Clone into a per-session sandbox and extract source-tree signals.
-2. Allow issue selection and user skill preferences for more precise ranking.
-3. Add a downloadable contribution plan and pull-request template.
-4. Add optional, user-supplied model integrations behind an explicit setting.
+#  Built With
+
+- Codex
+- GPT-5.6
+- GitHub REST API
+- Python
+- JavaScript
+
+---
+
+#  Future Roadmap
+
+- Repository cloning
+- Semantic code search
+- Repository knowledge graph
+- Multi-agent collaboration
+- Automatic code generation
+- GitHub Pull Request creation
+- VS Code Extension
+- CI/CD integration
+
+---
+
+# Why OpenPilot?
+
+OpenPilot is designed to lower the barrier to open source contributions by helping developers understand unfamiliar repositories, make safe and meaningful changes, and submit higher-quality pull requests with confidence.
+
+Whether you're making your **first contribution** or your **hundredth**, OpenPilot acts like an experienced maintainer guiding you every step of the way.
+
+---
+
+#  Built During OpenAI Build Week
+
+OpenPilot was built during **OpenAI Build Week** using **Codex** and **GPT-5.6**.
+
+Codex served as the development partner for planning, implementation, refactoring, and iterative development, while GPT-5.6 assisted with repository reasoning, contribution planning, and product design.
+
+The project demonstrates how AI can help developers contribute to open source more confidently without replacing the developer in the decision-making process.
+
+---
+
+> **Note**
+>
+> OpenPilot is currently an MVP (Minimum Viable Product) developed during OpenAI Build Week. The current version demonstrates the core contribution workflow, while several planned capabilities are listed in the roadmap and will be implemented in future iterations.
+
+
+## 📄 License
+
+This project is licensed under the MIT License.
